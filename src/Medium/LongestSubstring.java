@@ -1,3 +1,5 @@
+package Medium;
+
 /*
 Given a string s, find the length of the longest substring without repeating characters.
 
@@ -28,8 +30,6 @@ Constraints:
 s consists of English letters, digits, symbols and spaces.
 
 */
-
-
 
 import java.util.HashMap;
 
