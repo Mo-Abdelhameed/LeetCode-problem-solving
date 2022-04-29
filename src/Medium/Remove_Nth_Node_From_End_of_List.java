@@ -27,7 +27,7 @@ The number of nodes in the list is sz.
 
 
 import java.util.ArrayList;
-import Medium.ListNode;
+
 public class Remove_Nth_Node_From_End_of_List {
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {

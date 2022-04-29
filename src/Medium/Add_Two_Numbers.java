@@ -104,20 +104,3 @@ public class Add_Two_Numbers {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-
-    public String toString(){
-        String res = "";
-        ListNode temp = this;
-        while(temp != null){
-            res += temp.val;
-            temp = temp.next;
-        }
-        return res;
-    }
-}
