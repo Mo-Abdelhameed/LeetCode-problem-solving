@@ -1,4 +1,4 @@
-package Medium;
+package Medium.Recursion_and_Bactracking;
 
 /*
 Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.
@@ -70,8 +70,8 @@ public class Combination_Sum {
     }
 
     public static void main(String[] args) {
-        int [] c = {2,3,6,7};
-        int target = 7;
+        int [] c = {10,1,2,7,6,1,5};
+        int target = 8;
         combinationSum(c, target);
         System.out.println(result);
     }

@@ -1,4 +1,4 @@
-package Medium;
+package Medium.Recursion_and_Bactracking;
 
 public class TreeNode {
       int val;

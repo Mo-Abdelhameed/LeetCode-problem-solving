@@ -1,4 +1,4 @@
-package Medium;
+package Medium.Recursion_and_Bactracking;
 
 /*
 Given the root of a binary tree, determine if it is a valid binary search tree (BST).
@@ -28,8 +28,6 @@ Constraints:
 The number of nodes in the tree is in the range [1, 104].
 -231 <= Node.val <= 231 - 1
 */
-
-import Medium.TreeNode;
 
 import java.util.ArrayList;
 
