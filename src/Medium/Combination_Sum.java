@@ -55,16 +55,16 @@ public class Combination_Sum {
         if(i == candidates.length || target < 0)
             return;
 
+        if(target == 0){
+            result.add((ArrayList)res.clone());
+            return;
+        }
+
         combinationSum(candidates, target, res, i+1);
 
-        if(target - candidates[i] > 0){
+        if(target - candidates[i] >= 0){
             res.add(candidates[i]);
             combinationSum(candidates, target-candidates[i], res, i);
-            res.remove(res.size()-1);
-        }
-        else if(target - candidates[i] == 0){
-            res.add(candidates[i]);
-            result.add((ArrayList)res.clone());
             res.remove(res.size()-1);
         }
     }
