@@ -1,4 +1,4 @@
-package Medium;
+package Medium.LinkedLists;
 
 public class ListNode {
     public int val;
@@ -15,5 +15,13 @@ public class ListNode {
             temp = temp.next;
         }
         return res;
+    }
+
+    public void printList(){
+        ListNode t = this;
+        while (t != null){
+            System.out.print(t.val + " ");
+            t = t.next;
+        }
     }
 }

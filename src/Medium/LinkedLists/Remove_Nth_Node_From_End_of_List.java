@@ -1,4 +1,4 @@
-package Medium;
+package Medium.LinkedLists;
 
 /*
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
@@ -25,6 +25,8 @@ The number of nodes in the list is sz.
 1 <= n <= sz
 * */
 
+
+import Medium.LinkedLists.ListNode;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package Easy;
+package Easy.LinkedLists;
 
 /*
 You are given the heads of two sorted linked lists list1 and list2.
@@ -28,7 +28,7 @@ The number of nodes in both lists is in the range [0, 50].
 Both list1 and list2 are sorted in non-decreasing order.
 */
 
-import Medium.ListNode;
+import Medium.LinkedLists.ListNode;
 public class Merge_Two_Sorted_Lists {
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
