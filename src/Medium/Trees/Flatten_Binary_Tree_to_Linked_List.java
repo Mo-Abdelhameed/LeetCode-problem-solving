@@ -45,10 +45,6 @@ public class Flatten_Binary_Tree_to_Linked_List {
             root.left = null;
             return root;
         }
-
-        if(root.right != null)
-            return root;
-
         return root;
     }
 
@@ -66,9 +62,10 @@ public class Flatten_Binary_Tree_to_Linked_List {
 
         if(root == null)
             return null;
-        if(isSmallTree(root)){
+
+        if(isSmallTree(root))
             return flattenSmallTree(root);
-        }
+
         TreeNode left = flattenHelper(root.left);
         TreeNode right = flattenHelper(root.right);
         root.right = left;
