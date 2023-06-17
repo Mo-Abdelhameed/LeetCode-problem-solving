@@ -6,7 +6,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        self.dp = [ [0] * n for i in range(m) ]
+        self.dp = [[0] * n for i in range(m)]
         return self.find_path(m, n, 0, 0) 
     
 
