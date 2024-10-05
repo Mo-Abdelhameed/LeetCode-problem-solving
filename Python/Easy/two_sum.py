@@ -1,14 +1,13 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        index_map = {} 
-        for (index, item) in enumerate(nums):
-            index_map[item] = index
+from typing import List
 
-        for (index, item) in enumerate(nums):
-            if(target - item in index_map and index_map[target-item] != index):
-                return [index, index_map[target-item]]
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        d = {}
+        for i, num in enumerate(nums):
+            complement = target - num
+
+            if complement in d.keys():
+                return [i, d[complement]]
+
+            d[num] = i
