@@ -13,7 +13,7 @@ class Solution:
             word_map[len(word)].add(word)
 
         best_word = ""
-        for word in reversed(sorted(words)):
+        for word in words:
             found = True
             for i in range(1, len(word)):
                 subword = word[:i]
